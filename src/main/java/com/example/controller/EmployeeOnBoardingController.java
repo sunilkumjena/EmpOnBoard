@@ -27,7 +27,7 @@ public class EmployeeOnBoardingController {
     }
 
     @GetMapping("/get/{id}")
-    public ResponseEntity<Employee> getStudent(@PathVariable("id") Long employeeId){
+    public ResponseEntity<Employee> getEmployee(@PathVariable("id") Long employeeId){
         if(employeeId == null){
             throw new GlobalException("Employee id is null . Please add a valid employee id and try again!");
         }
